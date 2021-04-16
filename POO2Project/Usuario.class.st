@@ -21,13 +21,13 @@ Usuario class >> unusuarioconnombre: unNombre concontraseña: unaContra [
 	^ self new usuarioConUnNombre: unNombre yUnaContraseña: unaContra
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Usuario >> ContraseñaUsuario [
 
 ^contraseña
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Usuario >> NombreUsuario [
 ^nombre.
 ]
@@ -61,9 +61,8 @@ Usuario >> borrarPregunta: unaPregunta [
 
 { #category : #private }
 Usuario >> devolverMiPuntajePorMisPreguntasYSusRespuestas [
-	preguntas
-		ifNotEmpty: [ ^ (preguntas size) * 20
-				+ self devolverPuntajePorLasRespuestasDeMiPreguntas ]
+	 ^ preguntas size * 20
+				+ self devolverPuntajePorLasRespuestasDeMiPreguntas 
 ]
 
 { #category : #private }

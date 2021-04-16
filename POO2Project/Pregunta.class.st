@@ -22,8 +22,8 @@ Pregunta class >> preguntacontopicos: topicos titulo: unTitulo descripc: unaDesc
 
 { #category : #requirements }
 Pregunta >> agregarRespuesta: unaRespuesta [
-	respuestas
-		add: unaRespuesta 
+	respuestas add: unaRespuesta.
+	unaRespuesta esMiUsuario agregarRespuesta: unaRespuesta.
 ]
 
 { #category : #private }

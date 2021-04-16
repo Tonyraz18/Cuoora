@@ -67,8 +67,3 @@ Post >> initialize [
 	likes := OrderedCollection new.
 	dislikes := OrderedCollection new
 ]
-
-{ #category : #accessing }
-Post >> usuario [
-	^usuario
-]

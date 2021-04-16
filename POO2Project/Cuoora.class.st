@@ -95,10 +95,11 @@ Cuoora >> obtenerPreguntasDeTopico: coleccionTopicos [
 		flatCollect: [ :usuario | usuario preguntasDeUnTopico: coleccionTopicos ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #requirements }
 Cuoora >> validarUsuario: aUser [
-	    ^ usuarios
-        detect:
-            [ :usuario | usuario NombreUsuario = aUser NombreUsuario  & (usuario ContraseñaUsuario  = aUser ContraseñaUsuario ) ]
-        ifNone: [ nil ]
+	^ usuarios
+		detect: [ :usuario | 
+			usuario NombreUsuario = aUser NombreUsuario
+				& (usuario ContraseñaUsuario = aUser ContraseñaUsuario) ]
+		ifNone: [ nil ]
 ]

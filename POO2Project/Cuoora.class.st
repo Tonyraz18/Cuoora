@@ -14,6 +14,12 @@ Class {
 	#category : #'POO2Project-model'
 }
 
+{ #category : #'as yet unclassified' }
+Cuoora class >> clearSoleInstance [ 
+
+ soleinstance := nil.
+]
+
 { #category : #'instance creation' }
 Cuoora class >> soleInstance [
 	soleinstance ifNil:[soleinstance := (self new) HardcodeData  ].
@@ -31,8 +37,7 @@ Cuoora >> HardcodeData [
 
 { #category : #requirements }
 Cuoora >> agregarTopico: unTopico [
-	(topicos includes: unTopico)
-		ifFalse: [ topicos add: unTopico ]
+	topicos add: unTopico
 ]
 
 { #category : #requirements }
@@ -79,5 +84,8 @@ Cuoora >> obtenerPreguntasDeTopico: coleccionTopicos [
 
 { #category : #'as yet unclassified' }
 Cuoora >> validarUsuario: aUser [
-^usuarios includes: aUser
+	    ^ usuarios
+        detect:
+            [ :usuario | usuario NombreUsuario = aUser NombreUsuario  & (usuario ContraseñaUsuario  = aUser ContraseñaUsuario ) ]
+        ifNone: [ nil ]
 ]

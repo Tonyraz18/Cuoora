@@ -3,10 +3,51 @@ Class {
 	#superclass : #WAComponent,
 	#instVars : [
 		'titulo',
-		'descripcion'
+		'descripcion',
+		'topico',
+		'cuoora'
 	],
 	#category : #'POO2Project-iu'
 }
+
+{ #category : #'as yet unclassified' }
+PreguntaComponent >> agregarPregunta [
+
+
+]
+
+{ #category : #accessing }
+PreguntaComponent >> descripcion [
+	^ descripcion
+]
+
+{ #category : #accessing }
+PreguntaComponent >> descripcion: anObject [
+	descripcion := anObject
+]
+
+{ #category : #initialization }
+PreguntaComponent >> initialize [
+		super initialize.
+	cuoora := Cuoora soleInstance
+]
+
+{ #category : #'as yet unclassified' }
+PreguntaComponent >> mostrarTopicos [
+	^ cuoora devolverTopicosRegistrados
+		ifNotEmpty: [ ','
+				join: [ cuoora devolverTopicosRegistrados
+						collect: [ topico | topico nombre ] ] ]
+]
+
+{ #category : #rendering }
+PreguntaComponent >> renderButtonTopicoOn: aCanvas [
+	aCanvas
+		paragraph:
+			'ingresar textualmente los topicos separando cada uno con una "," (coma)'.
+	aCanvas paragraph: 'Topicos disponibles: '.
+	aCanvas paragraph: self mostrarTopicos .
+]
 
 { #category : #rendering }
 PreguntaComponent >> renderContentOn: aCanvas [
@@ -15,9 +56,33 @@ PreguntaComponent >> renderContentOn: aCanvas [
 				paragraph: [ aCanvas label: 'Titulo: '.
 					aCanvas textInput on: #titulo of: self ].
 			aCanvas
-				paragraph: [ aCanvas label: 'Descripcion: '.
+				paragraph: [ aCanvas label: 'Descripcion '.
 					aCanvas textInput on: #descripcion of: self ].
+			aCanvas
+				paragraph: [ aCanvas label: 'Topicos '.
+					aCanvas textInput on: #topico of: self ].
+			self renderButtonTopicoOn: aCanvas.
 			aCanvas button
-				callback: [ self login ];
-				with: 'Crear Pregunta' ]
+				callback: [ self agregarPregunta ];
+				with: 'Agregar Pregunta' ]
+]
+
+{ #category : #accessing }
+PreguntaComponent >> titulo [
+	^ titulo
+]
+
+{ #category : #accessing }
+PreguntaComponent >> titulo: anObject [
+	titulo := anObject
+]
+
+{ #category : #accessing }
+PreguntaComponent >> topico [
+	^ topico
+]
+
+{ #category : #accessing }
+PreguntaComponent >> topico: anObject [
+	topico := anObject
 ]

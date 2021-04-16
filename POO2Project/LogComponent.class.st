@@ -38,17 +38,18 @@ LogComponent >> initialize [
 ]
 
 { #category : #callbacks }
-LogComponent >> login [ 
+LogComponent >> login [
+	(self modelCuoora
+		validarUsuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña))
+		ifNotNil: [ self session
+				usuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña).
+			self call: CuooraHomeComponent new ]
+]
 
-	( cuoora validarUsuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña))
-	ifNotNil: [ 	self session usuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña).
-	self call: CuooraHomeComponent new ].
+{ #category : #'as yet unclassified' }
+LogComponent >> modelCuoora [
 
-
-
-	
-	
-
+^cuoora
 ]
 
 { #category : #accessing }

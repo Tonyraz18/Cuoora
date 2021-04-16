@@ -13,12 +13,6 @@ Class {
 }
 
 { #category : #'instance creation' }
-Pregunta class >> preguntacon: topicos titulo: unTitulo descripc: unaDescripcion realizada: fecha [
-	^ self new
-		preguntaConTopicos: topicos titulo: unTitulo descripc: unaDescripcion
-]
-
-{ #category : #'instance creation' }
 Pregunta class >> preguntacontopicos: topicos titulo: unTitulo descripc: unaDescripcion [
 	^ self new
 		preguntaConTopicos: topicos

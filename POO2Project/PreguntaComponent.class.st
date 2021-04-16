@@ -47,9 +47,8 @@ PreguntaComponent >> initialize [
 { #category : #'as yet unclassified' }
 PreguntaComponent >> mostrarTopicos [
 	^ cuoora devolverTopicosRegistrados
-		ifNotEmpty: [ ','
-				join: [ cuoora devolverTopicosRegistrados
-						collect: [:top | top nombre ] ] ] 
+		ifNotEmpty: [ ' , '
+				join: (cuoora devolverTopicosRegistrados collect: [ :top | top nombre ]) ]
 ]
 
 { #category : #rendering }

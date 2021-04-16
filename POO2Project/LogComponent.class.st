@@ -1,5 +1,7 @@
 "
-interface de login 
+(WAAdmin register: LogComponent asApplicationAt: 'cuoora')sessionClass: SessionUser.
+
+Cuoora clearSoleInstance .
 "
 Class {
 	#name : #LogComponent,
@@ -7,14 +9,17 @@ Class {
 	#instVars : [
 		'nombre',
 		'contraseña',
-		'cuoora',
-		'usuario'
-	],
-	#classInstVars : [
-		'soleInstance'
+		'cuoora'
 	],
 	#category : #'POO2Project-iu'
 }
+
+{ #category : #'instance creation' }
+LogComponent class >> initialize [
+	|app|
+	app:= WAAdmin register: self asApplicationAt: 'cuoora'.
+	app sessionClass: SessionUser
+]
 
 { #category : #accessing }
 LogComponent >> contraseña [
@@ -29,13 +34,21 @@ LogComponent >> contraseña: anObject [
 { #category : #initialization }
 LogComponent >> initialize [
 	super initialize.
-	cuoora := Cuoora soleInstance.
+	cuoora := Cuoora soleInstance
 ]
 
 { #category : #callbacks }
-LogComponent >> login [
-	self session usuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña).
-	self call: CuooraHomeComponent new
+LogComponent >> login [ 
+
+	( cuoora validarUsuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña))
+	ifNotNil: [ 	self session usuario: (Usuario unusuarioconnombre: nombre concontraseña: contraseña).
+	self call: CuooraHomeComponent new ].
+
+
+
+	
+	
+
 ]
 
 { #category : #accessing }

@@ -28,11 +28,24 @@ Cuoora class >> soleInstance [
 
 { #category : #initialization }
 Cuoora >> HardcodeData [
-
-	self agregarUsuario: (Usuario unusuarioconnombre: 'Juan' concontraseña: 'Juan').
-	self agregarUsuario: (Usuario unusuarioconnombre: 'Facu' concontraseña: 'Facu').
-	self agregarUsuario: (Usuario unusuarioconnombre: 'Tony' concontraseña: 'Tony').
-	
+	self
+		agregarUsuario: (Usuario unusuarioconnombre: 'Juan' concontraseña: 'Juan').
+	self
+		agregarUsuario: (Usuario unusuarioconnombre: 'Facu' concontraseña: 'Facu').
+	self
+		agregarUsuario: (Usuario unusuarioconnombre: 'Tony' concontraseña: 'Tony').
+	self
+		agregarTopico:
+			(Topico
+				untopicoconnombre: 'informatica' yunadescripcion: 'universidad de informaticos').
+	self
+		agregarTopico:
+			(Topico
+				untopicoconnombre: 'Abogacia' yunadescripcion: 'universidad de abogados').
+	self
+		agregarTopico:
+			(Topico
+				untopicoconnombre: 'Medicina' yunadescripcion: 'universidad de medicos')
 ]
 
 { #category : #requirements }

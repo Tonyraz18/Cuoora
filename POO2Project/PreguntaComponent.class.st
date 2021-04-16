@@ -12,14 +12,20 @@ Class {
 
 { #category : #'as yet unclassified' }
 PreguntaComponent >> agregarPregunta [
-	
-	|preg|
-	preg:= Pregunta 
-	preguntacontopicos: topico
-	titulo: titulo 
-	descripc: descripcion.
+	| preg |
+	preg := Pregunta
+		preguntacontopicos: self coleccionTopicoDePregunta 
+		titulo: titulo
+		descripc: descripcion.
+	cuoora agregarPregunta: preg
+]
 
-	cuoora agregarPregunta:preg.
+{ #category : #'as yet unclassified' }
+PreguntaComponent >> coleccionTopicoDePregunta [
+	^ (topico substrings: ',')
+		collect:
+			[ :nombre | Topico untopicoconnombre: nombre yunadescripcion: ' ' ]
+				asOrderedCollection
 ]
 
 { #category : #accessing }
@@ -43,7 +49,7 @@ PreguntaComponent >> mostrarTopicos [
 	^ cuoora devolverTopicosRegistrados
 		ifNotEmpty: [ ','
 				join: [ cuoora devolverTopicosRegistrados
-						collect: [ topico | topico nombre ] ] ]
+						collect: [:top | top nombre ] ] ] 
 ]
 
 { #category : #rendering }

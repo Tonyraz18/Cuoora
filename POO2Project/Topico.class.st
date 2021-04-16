@@ -12,11 +12,6 @@ Class {
 }
 
 { #category : #'instance creation' }
-Topico class >> untopicocon: unNombre y: unaDescrip [
-^self new topicocon: unNombre yuna:unaDescrip 
-]
-
-{ #category : #'instance creation' }
 Topico class >> untopicoconnombre: unNombre yunadescripcion: unaDescrip [
 	^ self new topicoconnombre: unNombre yunadescripcion: unaDescrip
 ]

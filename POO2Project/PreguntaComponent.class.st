@@ -12,8 +12,14 @@ Class {
 
 { #category : #'as yet unclassified' }
 PreguntaComponent >> agregarPregunta [
+	
+	|preg|
+	preg:= Pregunta 
+	preguntacontopicos: topico
+	titulo: titulo 
+	descripc: descripcion.
 
-
+	cuoora agregarPregunta:preg.
 ]
 
 { #category : #accessing }

@@ -76,6 +76,11 @@ Pregunta >> tengoReaccionDeUnUsuario: unUsuario [
 	^ false
 ]
 
+{ #category : #accessing }
+Pregunta >> titulo [
+	^ titulo
+]
+
 { #category : #requirements }
 Pregunta >> usuario [
 	^ super usuario

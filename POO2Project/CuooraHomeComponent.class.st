@@ -4,6 +4,9 @@ pagina principal del la app
 Class {
 	#name : #CuooraHomeComponent,
 	#superclass : #WAComponent,
+	#instVars : [
+		'relevantes'
+	],
 	#category : #'POO2Project-iu'
 }
 
@@ -172,7 +175,10 @@ CuooraHomeComponent >> crearPregunta [
 
 { #category : #initialization }
 CuooraHomeComponent >> initialize [
-	super initialize 
+	super initialize .
+	relevantes := self session usuario devolverMisPreguntas . "deberia ser preguntas relevantes pero no sabemos por que no nos anda el relevantes"
+	relevantes sort: [:a :b| a fecha > b fecha ]
+	
 	
 ]
 
@@ -198,8 +204,8 @@ CuooraHomeComponent >> renderPostsOn: aCanvas [
 		level: 2;
 		with: 'Posts'.
 	aCanvas
-		unorderedList: [ self session usuario devolverMisPreguntas
-				do: [ :each | aCanvas listItem: each text ] ].
+		unorderedList: [ relevantes
+				do: [ :each | aCanvas listItem: [ aCanvas text: each titulo ] ] ].
 	aCanvas anchor
 		callback: [ self crearPregunta ];
 		with: [ aCanvas button: 'New post' ]

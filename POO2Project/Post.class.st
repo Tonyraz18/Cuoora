@@ -62,6 +62,11 @@ Post >> eliminarReaccion: unaColeccion deUnUsuario: unUsuario [
 						detect: [ :reaccion | reaccion miUsuarioCreador: unUsuario ]) ]
 ]
 
+{ #category : #accessing }
+Post >> fecha [
+	^ fecha
+]
+
 { #category : #initialization }
 Post >> initialize [
 	likes := OrderedCollection new.

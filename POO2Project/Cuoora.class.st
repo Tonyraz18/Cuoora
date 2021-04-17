@@ -28,24 +28,35 @@ Cuoora class >> soleInstance [
 
 { #category : #initialization }
 Cuoora >> HardcodeData [
+	"USUARIOS"
+	|Juan coleccionTopico|
+	
+	coleccionTopico := OrderedCollection new.
+	coleccionTopico add: (Topico untopicoconnombre: 'medicina' yunadescripcion: 'sinDescripcion') .
+	
+	Juan:=Usuario unusuarioconnombre: 'Juan' concontraseña: 'Juan'.
+	Juan agregarPregunta: (Pregunta preguntacontopicos: coleccionTopico  titulo: 'pregunta1' descripc: '¿cuanto es 1+1?').
+	Juan agregarPregunta: (Pregunta preguntacontopicos: coleccionTopico  titulo: 'pregunta2' descripc: '¿cuanto es 2+1?').
+	Juan agregarPregunta: (Pregunta preguntacontopicos: coleccionTopico  titulo: 'pregunta3' descripc: '¿cuanto es 3+1?').
+	Juan agregarTopicoDeInteres: coleccionTopico .
 	self
-		agregarUsuario: (Usuario unusuarioconnombre: 'Juan' concontraseña: 'Juan').
-	self
-		agregarUsuario: (Usuario unusuarioconnombre: 'Facu' concontraseña: 'Facu').
-	self
-		agregarUsuario: (Usuario unusuarioconnombre: 'Tony' concontraseña: 'Tony').
+		agregarUsuario: Juan.	
+	"TOPICOS"
 	self
 		agregarTopico:
 			(Topico
-				untopicoconnombre: 'informatica' yunadescripcion: 'universidad de informaticos').
+				untopicoconnombre: 'informatica'
+				yunadescripcion: 'universidad de informaticos').
 	self
 		agregarTopico:
 			(Topico
-				untopicoconnombre: 'Abogacia' yunadescripcion: 'universidad de abogados').
+				untopicoconnombre: 'Abogacia'
+				yunadescripcion: 'universidad de abogados').
 	self
 		agregarTopico:
 			(Topico
-				untopicoconnombre: 'Medicina' yunadescripcion: 'universidad de medicos')
+				untopicoconnombre: 'Medicina'
+				yunadescripcion: 'universidad de medicos')
 ]
 
 { #category : #requirements }

@@ -1,0 +1,3 @@
+requirements
+devolverCantidadDeLikes
+	^likes size

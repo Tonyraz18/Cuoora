@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Tony 4/7/2021 09:36",
+	"super" : "Post",
+	"category" : "POO2Project-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"titulo",
+		"topicos",
+		"respuestas"
+	],
+	"name" : "Pregunta",
+	"type" : "normal"
+}

@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "POO2Project-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuoora",
+		"usuario1",
+		"usuario2",
+		"pregunta",
+		"pregunta2",
+		"topico",
+		"respuesta1",
+		"respuesta2",
+		"reaccion",
+		"colecctopicos"
+	],
+	"name" : "CuooraTest",
+	"type" : "normal"
+}

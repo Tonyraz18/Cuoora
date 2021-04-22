@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"texto",
+		"usuario",
+		"pregunta"
+	],
+	"name" : "RespuestaComponent",
+	"type" : "normal"
+}

@@ -11,11 +11,13 @@ setUp
 	pregunta := Pregunta
 		preguntacontopicos: colecctopicos
 		titulo: 'Duda general sobre el lenguaje python'
-		descripc: 'Duda sobre la implementacion en python'.
+		descripc: 'Duda sobre la implementacion en python'
+		usuario: usuario1.
 	pregunta2 := Pregunta
 		preguntacontopicos: colecctopicos
 		titulo: 'Duda general sobre el lenguaje python'
-		descripc: 'Duda sobre la implementacion en python'.
+		descripc: 'Duda sobre la implementacion en python'
+		usuario: usuario2.
 	respuesta1 := Respuesta
 		unarrespuestaconuntexto: 'Mira yo creo que podes sumar esas dos variables'
 		unusuario: usuario2.

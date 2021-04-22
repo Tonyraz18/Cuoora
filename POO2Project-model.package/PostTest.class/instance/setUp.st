@@ -10,7 +10,8 @@ setUp
 	pregunta := Pregunta
 		preguntacontopicos: topico
 		titulo: 'Duda general sobre el lenguaje python'
-		descripc: 'Duda sobre la implementacion en python'.
+		descripc: 'Duda sobre la implementacion en python'
+		usuario: usuario1.
 	respuesta := Respuesta
 		unarrespuestaconuntexto: 'Mira yo creo que podes sumar esas dos variables'
 		unusuario: usuario1.

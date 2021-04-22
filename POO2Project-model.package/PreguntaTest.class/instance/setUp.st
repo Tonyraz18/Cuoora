@@ -1,6 +1,7 @@
 running
 setUp
 	"Hooks that subclasses may override to define the fixture of test."
+
 	topico := Topico
 		untopicoconnombre: 'Python'
 		yunadescripcion: 'un lenguaje innovador'.
@@ -11,7 +12,8 @@ setUp
 	pregunta := Pregunta
 		preguntacontopicos: colecctopicos
 		titulo: 'Duda general sobre el lenguaje python'
-		descripc: 'Duda sobre la implementacion en python'.
+		descripc: 'Duda sobre la implementacion en python'
+		usuario: usuario1.
 	respuesta := Respuesta
 		unarrespuestaconuntexto: 'Mira yo creo que podes sumar esas dos variables'
 		unusuario: usuario1.

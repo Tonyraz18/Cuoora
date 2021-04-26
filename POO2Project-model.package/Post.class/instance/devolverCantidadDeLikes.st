@@ -1,3 +1,0 @@
-requirements
-devolverCantidadDeLikes
-	^likes size

@@ -1,3 +1,3 @@
 requirements
 diferenciaLikeDislike
-	^ (self devolverCantidadDeLikes - self devolverCantidadDeDislikes)
+	^ (likes size) - (dislikes size)

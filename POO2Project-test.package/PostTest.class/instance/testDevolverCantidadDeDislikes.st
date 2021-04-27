@@ -1,4 +1,4 @@
 tests
 testDevolverCantidadDeDislikes
-	pregunta agregarDislikeDeUnUsuario: reaccion.
+	pregunta agregarReaccionDeUnUsuario: reaccion conValor: false.
 	self assert: pregunta devolverCantidadDeDislikes equals: 1

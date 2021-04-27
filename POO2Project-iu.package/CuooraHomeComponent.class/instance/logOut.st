@@ -1,4 +1,5 @@
 as yet unclassified
 logOut
 
-self session usuario: nil.
+	self session unregister.
+	self requestContext redirectTo: self application url

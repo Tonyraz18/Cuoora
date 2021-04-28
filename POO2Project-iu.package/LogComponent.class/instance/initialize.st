@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	cuoora := Cuoora soleInstance
+	self session cuoora: Cuoora soleInstance

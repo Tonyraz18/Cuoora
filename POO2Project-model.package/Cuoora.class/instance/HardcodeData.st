@@ -27,6 +27,7 @@ HardcodeData
 			(Respuesta
 				unarrespuestaconuntexto: '¿Que problema estas teniendo?'
 				unusuario: usuario2).
+	pregunta agregarReaccionDeUnUsuario: usuario2 conValor: true. 
 	usuario agregarPregunta: pregunta.
 	usuario
 		agregarPregunta:

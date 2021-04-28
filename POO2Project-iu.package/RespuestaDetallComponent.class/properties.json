@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WASession",
+	"super" : "WAComponent",
 	"category" : "POO2Project-iu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"usuario",
-		"cuoora"
+		"pregunta"
 	],
-	"name" : "SessionUser",
+	"name" : "RespuestaDetallComponent",
 	"type" : "normal"
 }

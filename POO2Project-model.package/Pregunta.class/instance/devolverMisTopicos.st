@@ -1,3 +1,3 @@
 requirements
 devolverMisTopicos
-	^ topicos
+	^ topicos collect: [ :topic | topic nombre ]

@@ -1,5 +1,4 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas div with:[self renderHeaderOn: aCanvas].
-	self renderPostsOn: aCanvas.
-	
+	aCanvas div with: [ header renderContentOn ].
+	self renderPostsOn: aCanvas

@@ -60,7 +60,5 @@ renderContentOn: aCanvas
 		callback: [ self
 				call: (RespuestaCreacionComponent unaRespuestaDeLaPregunta: pregunta) ];
 		with: 'Agregar una respuesta'.
-	aCanvas paragraph:[
-	aCanvas anchor
-		callback: [ self answer ];
-		with: [ aCanvas button with: 'Volver' ]]
+		aCanvas paragraph:''.
+ self renderBackOn: aCanvas

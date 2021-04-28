@@ -9,6 +9,10 @@ style
   		padding-top: 0.5rem;
   		padding-bottom: 0.5rem;
 	}
+	
+	a{
+	color:black;
+	}
 	.navbar-expand-lg{
 		-webkit-box-orient:horizontal;
 		-webkit-box-direction: normal;
@@ -118,6 +122,7 @@ style
 		border-radius:0;
 	}
 	.btn{
+	   margin:10px;
 		display:inline-block;
 		font-weight:400;
 		text-align:center;

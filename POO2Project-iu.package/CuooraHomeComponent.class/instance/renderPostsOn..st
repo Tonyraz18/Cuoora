@@ -30,14 +30,12 @@ renderPostsOn: aCanvas
 							aCanvas anchor
 								class: 'reaction';
 								callback: [ each agregarReaccionDeUnUsuario: self session usuario conValor: true ];
+								class:'btn btn-success';
 								with: 'Like' ].
 					aCanvas anchor
 						class: 'reaction';
 						callback: [ each agregarReaccionDeUnUsuario: self session usuario conValor: false ];
+						class:'btn btn-success';
 						with: 'Dislike'.
 					aCanvas space.
 					aCanvas horizontalRule ] ].
-	aCanvas anchor
-		class: 'newpost';
-		callback: [ self call: (PreguntaCreacionComponent new ) ];
-		with: [ aCanvas button: 'Nueva Pregunta' ]

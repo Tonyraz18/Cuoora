@@ -3,7 +3,7 @@ style
 	^ '
 		a{
 	color:black;
-	}
+	}	
 	.navbar {
   		position: relative;
   		display: flex;
@@ -122,7 +122,7 @@ style
 		border-radius:0;
 	}
 	.btn{
-	margin:10px;
+	   margin:10px;
 		display:inline-block;
 		font-weight:400;
 		text-align:center;

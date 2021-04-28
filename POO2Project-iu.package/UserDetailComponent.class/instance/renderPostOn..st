@@ -27,10 +27,12 @@ aCanvas
 							aCanvas anchor
 								class: 'reaction';
 								callback: [ each agregarReaccionDeUnUsuario: self  usuario conValor: true ];
+								class:'btn btn-success';
 								with: 'Like' ].
 					aCanvas anchor
 						class: 'reaction';
 						callback: [ each agregarReaccionDeUnUsuario: self  usuario conValor: false ];
+						class:'btn btn-success';
 						with: 'Dislike'.
 					aCanvas space.
 					aCanvas horizontalRule ] ].

@@ -1,6 +1,10 @@
 hooks
 style
-	^ '.navbar {
+	^ '
+		a{
+	color:black;
+	}
+	.navbar {
   		position: relative;
   		display: flex;
   		flex-wrap: wrap;
@@ -49,7 +53,7 @@ style
 		font-size: 1rem;
 		font-weight: 400;
 		line-height: 1.5;
-		
+		color:black;
 		text-align: left;
 		background-color: grey;
 	}
@@ -118,6 +122,7 @@ style
 		border-radius:0;
 	}
 	.btn{
+	   margin:10px;
 		display:inline-block;
 		font-weight:400;
 		text-align:center;

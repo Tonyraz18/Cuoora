@@ -34,5 +34,5 @@ renderPostsOn: aCanvas
 					aCanvas horizontalRule ] ].
 	aCanvas anchor
 		class: 'newpost';
-		callback: [  ];
+		callback: [ self call:PreguntaComponent new ];
 		with: [ aCanvas button: 'Nueva Pregunta' ]

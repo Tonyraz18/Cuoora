@@ -15,13 +15,13 @@ renderPostsOn: aCanvas
 										with: [ aCanvas emphasis: each titulo ] ].
 							aCanvas text: 'Topicos: '.
 							aCanvas text: (',' join: each devolverMisTopicos).
-							aCanvas space.
-							aCanvas paragraph: 'Realizada por: '.
-							aCanvas
-								strong:
-									each usuario NombreUsuario , ' | '
-										, each devolverCantidadDeRespuestas printString
-										, ' Respuestas'.
+							aCanvas paragraph: ''.
+							aCanvas text: 'Realizada por: '.
+							aCanvas anchor
+						class: 'reaction';
+						callback: [ self callUserDetail: each usuario ];
+						with: each usuario NombreUsuario.
+							aCanvas paragraph:each devolverCantidadDeRespuestas printString,' respuestas'.
 							aCanvas
 								paragraph:
 									each devolverCantidadDeLikes printString , ' Likes' , ' | '

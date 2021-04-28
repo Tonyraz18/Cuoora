@@ -21,10 +21,12 @@ renderContentOn: aCanvas
 			aCanvas paragraph: self mostrarTopicos.
 			aCanvas button
 				callback: [ self agregarPregunta ];
+				class: 'btn btn-success';
 				with: 'Publicar' ].
 	aCanvas
 		paragraph: [ aCanvas anchor
 				callback: [ self answer ];
 				with: [ aCanvas
 						button
+						class: 'btn btn-success';
 						with: 'Cancelar' ] ]

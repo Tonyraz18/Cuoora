@@ -33,8 +33,8 @@ renderContentOn: aCanvas
 		with: 'AGREGAR RESPUESTA'.
 	aCanvas
 		form: [ aCanvas
-				paragraph: [ aCanvas label: 'Contenido: '.
-					aCanvas textInput on: #texto of: self ].
+				paragraph: [
+					aCanvas textArea on: #texto of: self;style:  'width:400px;height:100px; font-size:16px;' ].
 			self renderResponderOn: aCanvas].
 		aCanvas paragraph:' '.
 				self renderBackOn: aCanvas.

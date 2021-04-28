@@ -1,12 +1,9 @@
 hooks
 style
 	^ '
-	textarea{
-	width:400px;
-	height:100px;}
 		a{
 	color:black;
-	}	
+	}
 	.navbar {
   		position: relative;
   		display: flex;

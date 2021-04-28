@@ -2,6 +2,6 @@ requirements
 validarUsuario: aUser
 	^ usuarios
 		detect: [ :usuario | 
-			usuario NombreUsuario = aUser NombreUsuario
-				& (usuario ContraseñaUsuario = aUser ContraseñaUsuario) ]
+			usuario nombreUsuario = aUser nombreUsuario
+				& (usuario contraseñaUsuario = aUser contraseñaUsuario) ]
 		ifNone: [ nil ]

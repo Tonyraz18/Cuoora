@@ -1,4 +1,4 @@
 private
 devolverPreguntasConUnTopicoDeInteres: coleccionDeTopicos
-	preguntas ifNotEmpty: [^preguntas
-		select: [ :pregunta | pregunta esMiTopico: topicosDeInteres ]].
+	^ preguntas
+				select: [ :pregunta | pregunta esMiTopico: topicosDeInteres ]

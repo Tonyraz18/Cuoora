@@ -1,3 +1,3 @@
-as yet unclassified
+private
 eliminarSeguido: unSeguido
 	seguidos remove: unSeguido

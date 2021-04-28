@@ -2,8 +2,7 @@ running
 setUp
 	cuoora := Cuoora new.
 	topico := Topico
-		untopicoconnombre: 'Python'
-		yunadescripcion: 'un lenguaje innovador'.
+		untopicoconnombre: 'Python'.
 	usuario1 := Usuario unusuarioconnombre: 'juan' concontraseña: 123456.
 	usuario2 := Usuario unusuarioconnombre: 'luis' concontraseña: 123456.
 	usuario3 := Usuario unusuarioconnombre: 'pedro' concontraseña: 123456.

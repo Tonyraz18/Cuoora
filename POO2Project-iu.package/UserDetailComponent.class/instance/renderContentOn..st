@@ -7,7 +7,7 @@ renderContentOn: aCanvas
 				with: 'Mi perfil ' ]
 		ifFalse: [ aCanvas heading
 				level: 2;
-				with: 'Perfil de  ' , usuario NombreUsuario.
+				with: 'Perfil de  ' , usuario nombreUsuario.
 			self renderValidationFollow
 				ifTrue: [ aCanvas emphasis: 'SIGUIENDO' ].
 			aCanvas paragraph: [ self renderFollowOn: aCanvas ] ].

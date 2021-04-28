@@ -1,4 +1,4 @@
 requirements
 agregarRespuesta: unaRespuesta
 	respuestas add: unaRespuesta.
-	unaRespuesta esMiUsuario agregarRespuesta: unaRespuesta.
+	unaRespuesta usuario agregarRespuesta: unaRespuesta.

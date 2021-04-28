@@ -1,4 +1,4 @@
 accessing
-ContraseñaUsuario
+contraseñaUsuario
 
 ^contraseña

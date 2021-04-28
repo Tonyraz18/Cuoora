@@ -2,8 +2,7 @@ running
 setUp
 	cuoora := Cuoora new.
 	colecctopicos := OrderedCollection new.
-	topico := Topico
-		untopicoconnombre: 'Python'.
+	topico := Topico untopicoconnombre: 'Python'.
 	colecctopicos add: topico.
 	usuario1 := Usuario unusuarioconnombre: 'juan' concontraseña: 123456.
 	usuario2 := Usuario unusuarioconnombre: 'luis' concontraseña: 654321.

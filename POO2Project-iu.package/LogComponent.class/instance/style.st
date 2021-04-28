@@ -211,6 +211,7 @@ style
 		width: auto;
 	}
 	.form-control{
+		margin: 10px;
 		padding: .375rem .75rem;
 		font-size: 1rem;
 		line-height: 1.5;

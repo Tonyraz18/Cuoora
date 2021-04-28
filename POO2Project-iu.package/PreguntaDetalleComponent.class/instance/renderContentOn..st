@@ -7,8 +7,11 @@ renderContentOn: aCanvas
 	aCanvas text: 'Topicos: '.
 	aCanvas text: (',' join: pregunta devolverMisTopicos).
 	aCanvas space.
-	aCanvas paragraph: 'Realizada por: '.
-	aCanvas strong: pregunta usuario NombreUsuario.
+	aCanvas paragraph: ''.
+	aCanvas text:'Realizada por: '.
+	aCanvas anchor
+				callback: [ self callUserDetail: pregunta usuario ];
+				with: pregunta usuario NombreUsuario.
 	aCanvas
 		paragraph:
 			pregunta devolverCantidadDeLikes printString , ' Likes' , ' | '

@@ -18,7 +18,6 @@ renderPostsOn: aCanvas
 							aCanvas paragraph: ''.
 							aCanvas text: 'Realizada por: '.
 							aCanvas anchor
-								class: 'reaction';
 								callback: [ self callUserDetail: each usuario ];
 								with: each usuario NombreUsuario.
 							aCanvas

@@ -1,16 +1,16 @@
 requirements
 agregarReaccionDeUnUsuario: unUsuario conValor: unValor
-	unValor
-		ifTrue: [ self
-				buscarReaccionYBorrarDeUnUsuario: unUsuario
-				enUnaColeccion: dislikes.
-			likes
-				detect: [ :each | each miUsuarioCreador: unUsuario ]
-				ifNone: [ likes add: (Reaccion unareacciondeunusuario: unUsuario) ].
-			^ self ].
-	self
-		buscarReaccionYBorrarDeUnUsuario: unUsuario
-		enUnaColeccion: likes.
-	dislikes
-		detect: [ :each | each miUsuarioCreador: unUsuario ]
-		ifNone: [ dislikes add: (Reaccion unareacciondeunusuario: unUsuario) ]
+    unValor
+        ifTrue: [ self
+                buscarReaccionYBorrarDeUnUsuario: unUsuario
+                enUnaColeccion: dislikes.
+            self
+                agregarOBorrarReaccionEnUnaColeccion: likes
+                conUnUsuario: unUsuario.
+            ^ self ].
+    self
+        buscarReaccionYBorrarDeUnUsuario: unUsuario
+        enUnaColeccion: likes.
+    self
+        agregarOBorrarReaccionEnUnaColeccion: dislikes
+        conUnUsuario: unUsuario

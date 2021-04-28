@@ -133,7 +133,7 @@ style
 	}
 	.btn-danger{
 		color:#fff;
-		background-color:#dc3545;
+		background-color:black;
 		border-color:#dc3545;
 	}
 	.btn-danger:hover{

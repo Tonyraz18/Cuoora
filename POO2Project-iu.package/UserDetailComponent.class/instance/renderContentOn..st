@@ -5,4 +5,5 @@ aCanvas div with: [ header renderContentOn: aCanvas ].
 		level: 2;
 		with: 'perfil de ', usuario NombreUsuario .
 	self renderPostOn: aCanvas.
+	self renderBackOn: aCanvas.
 

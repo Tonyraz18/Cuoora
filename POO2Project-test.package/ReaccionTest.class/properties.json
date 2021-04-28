@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "POO2Project-test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuoora",
+		"usuario1",
+		"reaccion"
+	],
+	"name" : "ReaccionTest",
+	"type" : "normal"
+}

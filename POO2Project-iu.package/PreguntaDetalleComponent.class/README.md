@@ -1,0 +1,1 @@
+detalles de una pregunta

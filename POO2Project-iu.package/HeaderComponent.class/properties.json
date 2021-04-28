@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Tony 4/27/2021 22:43",
+	"super" : "WAComponent",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HeaderComponent",
+	"type" : "normal"
+}

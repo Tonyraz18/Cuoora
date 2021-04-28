@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Tony 4/7/2021 09:36",
+	"super" : "Object",
+	"category" : "POO2Project-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fecha",
+		"texto",
+		"likes",
+		"dislikes",
+		"usuario"
+	],
+	"name" : "Post",
+	"type" : "normal"
+}

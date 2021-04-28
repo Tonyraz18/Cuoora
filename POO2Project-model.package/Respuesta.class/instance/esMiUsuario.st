@@ -1,3 +1,0 @@
-requirements
-esMiUsuario
-	^usuario

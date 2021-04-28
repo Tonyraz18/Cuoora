@@ -1,5 +1,6 @@
 rendering
 renderContentOn: aCanvas
+	header renderContentOn: aCanvas.
 	aCanvas heading
 		level: 2;
 		with: [ aCanvas emphasis: pregunta titulo ].

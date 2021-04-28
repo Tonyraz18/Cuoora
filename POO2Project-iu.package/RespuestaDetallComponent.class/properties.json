@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pregunta"
+		"pregunta",
+		"header"
 	],
 	"name" : "RespuestaDetallComponent",
 	"type" : "normal"

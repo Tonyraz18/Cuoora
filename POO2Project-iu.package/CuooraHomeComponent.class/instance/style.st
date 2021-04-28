@@ -49,7 +49,7 @@ style
 		font-size: 1rem;
 		font-weight: 400;
 		line-height: 1.5;
-		
+		color:#fff;
 		text-align: left;
 		background-color: grey;
 	}
@@ -175,17 +175,6 @@ style
 	}
 	.btn-primary{
 		color:#fff;
-		background-color:#007bff;
-		border-color:#007bff;
-	}
-	.btn-primary:focus{
-		box-shadow: 0 0 0 .2rem rgba(38,143,255,.5);
-		outline:0;
-	}
-	.btn-primary:hover{
-		color: #fff;
-    	background-color: #0069d9;
-   		border-color: #0062cc;
 	}
 	.btn-sm{
 		padding: .25rem .5rem;

@@ -52,11 +52,15 @@ renderContentOn: aCanvas
 								agregarReaccionDeUnUsuario: self session usuario
 								conValor: false ];
 						with: 'Dislike'.
-					aCanvas horizontalRule.
-					aCanvas heading
-						level: 3;
-						with: [ aCanvas emphasis: 'No hay mas respuestas' ].
-					aCanvas anchor
-						callback: [ self
-								call: (RespuestaCreacionComponent unaRespuestaDeLaPregunta: resp)];
-								with: 'Agregar una respuesta' ] ] 
+					aCanvas horizontalRule ] ].
+	aCanvas heading
+		level: 3;
+		with: [ aCanvas emphasis: 'No hay mas respuestas' ].
+	aCanvas anchor
+		callback: [ self
+				call: (RespuestaCreacionComponent unaRespuestaDeLaPregunta: pregunta) ];
+		with: 'Agregar una respuesta'.
+	aCanvas paragraph:[
+	aCanvas anchor
+		callback: [ self answer ];
+		with: [ aCanvas button with: 'Volver' ]]

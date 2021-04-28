@@ -8,7 +8,8 @@
 	"instvars" : [
 		"texto",
 		"usuario",
-		"pregunta"
+		"pregunta",
+		"header"
 	],
 	"name" : "RespuestaCreacionComponent",
 	"type" : "normal"

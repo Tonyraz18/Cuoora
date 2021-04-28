@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Tony 4/26/2021 23:22",
+	"super" : "WAComponent",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"titulo",
+		"descripcion",
+		"topico",
+		"cuoora",
+		"pregunta"
+	],
+	"name" : "PreguntaCreacionComponent",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 callbacks
 crearPregunta
-	self call: PreguntaComponent new
+	self call: PreguntaCreacionComponent new

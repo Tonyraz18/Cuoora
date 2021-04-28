@@ -6,12 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"titulo",
-		"descripcion",
-		"topico",
-		"cuoora",
+		"texto",
+		"usuario",
 		"pregunta"
 	],
-	"name" : "PreguntaComponent",
+	"name" : "RespuestaCreacionComponent",
 	"type" : "normal"
 }

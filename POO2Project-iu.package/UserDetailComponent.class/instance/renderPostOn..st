@@ -1,11 +1,8 @@
 rendering
-renderPostsOn: aCanvas
-	aCanvas heading
-		level: 2;
-		with: 'Ultimas Preguntas'.
-	aCanvas
-		unorderedList: [ (self session cuoora
-				devolverPreguntasRelevantesDeUnUsuario: self session usuario)
+renderPostOn:aCanvas
+aCanvas
+		unorderedList: [ (self usuario 
+				devolverMisPreguntas  )
 				do: [ :each | 
 					aCanvas
 						listItem: [ aCanvas anchor
@@ -19,7 +16,7 @@ renderPostsOn: aCanvas
 							aCanvas text: 'Realizada por: '.
 							aCanvas anchor
 								class: 'reaction';
-								callback: [ self callUserDetail: each usuario ];
+								callback: [  ];
 								with: each usuario NombreUsuario.
 							aCanvas
 								paragraph: each devolverCantidadDeRespuestas printString , ' respuestas'.
@@ -29,15 +26,11 @@ renderPostsOn: aCanvas
 										, each devolverCantidadDeDislikes printString , ' Dislikes'.
 							aCanvas anchor
 								class: 'reaction';
-								callback: [ each agregarReaccionDeUnUsuario: self session usuario conValor: true ];
+								callback: [ each agregarReaccionDeUnUsuario: self  usuario conValor: true ];
 								with: 'Like' ].
 					aCanvas anchor
 						class: 'reaction';
-						callback: [ each agregarReaccionDeUnUsuario: self session usuario conValor: false ];
+						callback: [ each agregarReaccionDeUnUsuario: self  usuario conValor: false ];
 						with: 'Dislike'.
 					aCanvas space.
 					aCanvas horizontalRule ] ].
-	aCanvas anchor
-		class: 'newpost';
-		callback: [ self call: (PreguntaCreacionComponent new ) ];
-		with: [ aCanvas button: 'Nueva Pregunta' ]

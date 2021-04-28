@@ -1,14 +1,15 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas heading level;
-	with: 'CuOOra'. 
-	aCanvas
-		form: [ aCanvas
-				paragraph: [ aCanvas label: 'Nombre de usuario: '.
-					aCanvas textInput on: #nombre of: self ].
-			aCanvas
-				paragraph: [ aCanvas label: 'Contraseña: '.
-					aCanvas textInput on: #contraseña of: self ].
-			aCanvas button
-				callback: [ self login ];
-				with: 'Iniciar Sesión' ]
+	aCanvas header class:'navbar navbar-expand-lg bg-dark justify-content-between';
+	with: [aCanvas heading with:'CuOOra WebPage']. 
+
+			  aCanvas
+        form: [ aCanvas
+                paragraph: [
+                    aCanvas textInput on: #nombre of: self ;class: 'form-control'; placeholder: 'Usuario' ].
+            aCanvas
+                paragraph: [
+                    aCanvas textInput on: #contraseña of: self ; class: 'form-control'; type:'password' ; placeholder: 'contraseña'].
+            aCanvas button
+                callback: [ self login ];
+                with: 'Iniciar Sesión' ]

@@ -1,7 +1,6 @@
 rendering
 renderLogoutButtonOn: aCanvas
-	aCanvas
-		paragraph: [ aCanvas anchor
+	 aCanvas anchor
 				class: 'logout';
 				callback: [ self logOut ];
-				with: [ aCanvas button with: 'Cerrar sesion' ] ]
+				with: [ aCanvas button class: 'btn btn-success username';with: 'Cerrar sesion' ] 

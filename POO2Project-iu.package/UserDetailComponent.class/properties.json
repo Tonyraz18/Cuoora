@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "CuooraComponent",
 	"category" : "POO2Project-iu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"usuario",
-		"header"
+		"usuario"
 	],
 	"name" : "UserDetailComponent",
 	"type" : "normal"

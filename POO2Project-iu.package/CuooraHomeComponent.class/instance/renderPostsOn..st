@@ -19,7 +19,7 @@ renderPostsOn: aCanvas
 							aCanvas text: 'Realizada por: '.
 							aCanvas anchor
 								callback: [ self callUserDetail: each usuario ];
-								with: each usuario nombreUsuario.
+								with: each usuario NombreUsuario.
 							aCanvas
 								paragraph: each devolverCantidadDeRespuestas printString , ' respuestas'.
 							aCanvas

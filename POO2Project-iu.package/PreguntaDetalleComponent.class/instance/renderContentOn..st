@@ -11,7 +11,7 @@ renderContentOn: aCanvas
 	aCanvas text:'Realizada por: '.
 	aCanvas anchor
 				callback: [ self callUserDetail: pregunta usuario ];
-				with: pregunta usuario nombreUsuario.
+				with: pregunta usuario NombreUsuario.
 	aCanvas
 		paragraph:
 			pregunta devolverCantidadDeLikes printString , ' Likes' , ' | '
@@ -37,7 +37,7 @@ renderContentOn: aCanvas
 					aCanvas heading
 						level: 2;
 						with: [ aCanvas text: 'Respuesta de '.
-							aCanvas text: resp usuario nombreUsuario ].
+							aCanvas text: resp esMiUsuario NombreUsuario ].
 					aCanvas paragraph: resp texto.
 					aCanvas
 						paragraph:

@@ -1,0 +1,3 @@
+requirements
+devolverCantidadDeDislikes
+	^ dislikes size

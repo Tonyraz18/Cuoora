@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WASession",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"usuario",
+		"cuoora"
+	],
+	"name" : "SessionUser",
+	"type" : "normal"
+}

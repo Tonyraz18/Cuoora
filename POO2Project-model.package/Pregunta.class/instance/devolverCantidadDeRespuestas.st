@@ -1,3 +1,0 @@
-private
-devolverCantidadDeRespuestas
-	^respuestas size

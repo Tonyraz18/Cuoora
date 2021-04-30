@@ -6,23 +6,17 @@ renderContentOn: aCanvas
 		with: [ aCanvas emphasis: 'Nueva Pregunta' ].
 	aCanvas
 		form: [ aCanvas
-				paragraph: [ aCanvas textInput
-						on: #titulo of: self;
-						class: 'form-control';
-						placeholder: 'titulo' ].
+				paragraph: [
+					aCanvas textInput on: #titulo of: self ;class: 'form-control';placeholder: 'titulo'].
 			aCanvas
-				paragraph: [ aCanvas textInput
-						on: #descripcion of: self;
-						class: 'form-control';
-						placeholder: 'Descripcion' ].
+				paragraph: [ 
+					aCanvas textInput on: #descripcion of: self ;class: 'form-control';placeholder: 'Descripcion'].
 			aCanvas
 				strong:
-					'Ingresar textualmente los topicos separando cada uno con una "," (coma)'.
+					'Ingresar textualmente los topicos separando cada uno con una "" (coma)'.
 			aCanvas
-				paragraph: [ aCanvas textInput
-						on: #stringdetopicos of: self;
-						class: 'form-control';
-						placeholder: 'Topicos' ].
+				paragraph: [ 
+					aCanvas textInput on: #stringdetopicos of: self ;class: 'form-control';placeholder: 'Topicos'].
 			aCanvas strong: 'Topicos disponibles: '.
 			aCanvas paragraph: self mostrarTopicos.
 			aCanvas button
@@ -32,6 +26,7 @@ renderContentOn: aCanvas
 	aCanvas
 		paragraph: [ aCanvas anchor
 				callback: [ self answer ];
-				with: [ aCanvas button
+				with: [ aCanvas
+						button
 						class: 'btn btn-success';
 						with: 'Cancelar' ] ]

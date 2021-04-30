@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	header := HeaderComponent new.
+	header := HeaderComponent new

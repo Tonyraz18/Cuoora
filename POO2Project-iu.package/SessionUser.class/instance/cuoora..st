@@ -1,3 +1,3 @@
 accessing
-cuoora: anObject
-	cuoora := anObject
+cuoora: unCuoora
+	cuoora := unCuoora 

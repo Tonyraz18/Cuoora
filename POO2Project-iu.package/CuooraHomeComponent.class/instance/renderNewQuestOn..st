@@ -1,4 +1,4 @@
-rendering
+as yet unclassified
 renderNewQuestOn: aCanvas
 	aCanvas anchor
 		class: 'newpost';

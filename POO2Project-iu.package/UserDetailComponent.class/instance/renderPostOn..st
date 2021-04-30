@@ -17,7 +17,7 @@ aCanvas
 							aCanvas anchor
 								class: 'reaction';
 								callback: [  ];
-								with: each usuario nombreUsuario.
+								with: each usuario NombreUsuario.
 							aCanvas
 								paragraph: each devolverCantidadDeRespuestas printString , ' respuestas'.
 							aCanvas

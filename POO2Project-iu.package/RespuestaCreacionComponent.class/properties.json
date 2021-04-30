@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "Tony 4/26/2021 23:22",
-	"super" : "WAComponent",
+	"super" : "CuooraComponent",
 	"category" : "POO2Project-iu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,8 +8,7 @@
 	"instvars" : [
 		"texto",
 		"usuario",
-		"pregunta",
-		"header"
+		"pregunta"
 	],
 	"name" : "RespuestaCreacionComponent",
 	"type" : "normal"

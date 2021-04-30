@@ -1,3 +1,3 @@
 private
-devolverMiPuntajePorMisReaccionesEnMisRespuestas
+devolverMiPuntajePorReaccionesEnMisRespuestas
 	^ misRespuestas sumNumbers: [ :each | each diferenciaLikeDislike ]

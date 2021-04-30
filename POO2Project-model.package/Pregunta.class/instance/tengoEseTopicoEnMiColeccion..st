@@ -1,4 +1,4 @@
-as yet unclassified
+private
 tengoEseTopicoEnMiColeccion: coleccionDeTopicos
 	topicos
 		do: [ :each | 

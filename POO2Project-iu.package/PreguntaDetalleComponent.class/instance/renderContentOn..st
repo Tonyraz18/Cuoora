@@ -8,7 +8,7 @@ renderContentOn: aCanvas
 		level: 2;
 		with: [ aCanvas emphasis: pregunta titulo ].
 	aCanvas text: 'Topicos: '.
-	aCanvas text: (',' join: pregunta devolverMisTopicos).
+	aCanvas text: (',' join: pregunta devolverLosNombresDeMisTopicos).
 	aCanvas space.
 	aCanvas paragraph: ''.
 	aCanvas text:'Realizada por: '.

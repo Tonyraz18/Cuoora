@@ -11,7 +11,7 @@ aCanvas
 										level: 2;
 										with: [ aCanvas emphasis: each titulo ] ].
 							aCanvas text: 'Topicos: '.
-							aCanvas text: (',' join: each devolverMisTopicos).
+							aCanvas text: (',' join: each devolverLosNombresDeMisTopicos).
 							aCanvas paragraph: ''.
 							aCanvas text: 'Realizada por: '.
 							aCanvas anchor

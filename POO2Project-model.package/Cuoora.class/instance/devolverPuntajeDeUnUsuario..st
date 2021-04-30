@@ -1,7 +1,7 @@
 requirements
 devolverPuntajeDeUnUsuario: unUsuario
 	^ unUsuario devolverMiPuntajePorMisPreguntas
-		+unUsuario devolverMiPuntajePorMisReaccionesEnMisRespuestas
+		+unUsuario devolverMiPuntajePorReaccionesEnMisRespuestas
 		+(self devolverPuntajeDeUnUsuarioPorRespuestasAOtroUsuario: unUsuario)
 		
 		+ (self devolverElPuntajeDeReaccionesDeUnUsuarioEnPreguntas: unUsuario)

@@ -7,16 +7,14 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"cuoora",
-		"usuario",
-		"usuario2",
 		"pregunta",
-		"pregunta1",
-		"topico",
 		"respuesta",
+		"respuesta2",
 		"reaccion",
-		"seguido",
-		"topicosColec"
+		"usuario1",
+		"topico",
+		"colecctopicos"
 	],
-	"name" : "UsuarioTest",
+	"name" : "TopicoTest",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 requirements
 agregarPregunta: unaPregunta
-	(unaPregunta devolverMisTopicos) ifNotEmpty: [   preguntas add: unaPregunta]
+	(unaPregunta devolverLosNombresDeMisTopicos) ifNotEmpty: [   preguntas add: unaPregunta]

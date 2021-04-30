@@ -4,10 +4,10 @@ setUp
 
 	cuoora := Cuoora new.
 	topicosColec := OrderedCollection new.
-	topico := Topico
-		untopicoconnombre: 'Python'.
+	topico := Topico untopicoconnombre: 'Python'.
 	topicosColec add: topico.
 	usuario := Usuario unusuarioconnombre: 'juan' concontraseña: 123456.
+	usuario2 := Usuario unusuarioconnombre: 'tony' concontraseña: 123456.
 	seguido := Usuario
 		unusuarioconnombre: 'roberto'
 		concontraseña: 654321.

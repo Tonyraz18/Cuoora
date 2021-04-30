@@ -1,0 +1,3 @@
+private
+devolverCantidadDeRespuestas
+	^respuestas size

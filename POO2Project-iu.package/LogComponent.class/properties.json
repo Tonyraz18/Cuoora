@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CuooraComponent",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"contraseña"
+	],
+	"name" : "LogComponent",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Tony 4/9/2021 19:06",
+	"super" : "CuooraComponent",
+	"category" : "POO2Project-iu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"usuario"
+	],
+	"name" : "CuooraHomeComponent",
+	"type" : "normal"
+}

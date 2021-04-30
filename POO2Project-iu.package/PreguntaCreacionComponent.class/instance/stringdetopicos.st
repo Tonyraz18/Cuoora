@@ -1,3 +1,0 @@
-accessing
-stringdetopicos
-	^ stringdetopicos

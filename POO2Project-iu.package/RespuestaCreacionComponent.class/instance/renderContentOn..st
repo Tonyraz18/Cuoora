@@ -1,6 +1,9 @@
 rendering
 renderContentOn: aCanvas
 	header renderContentOn: aCanvas.
+		self renderMyProfileOn: aCanvas.
+	self renderLogoutButtonOn: aCanvas .
+	self renderBackOn: aCanvas.
 	aCanvas heading
 		level: 2;
 		with: [ aCanvas emphasis: pregunta titulo ].
@@ -10,7 +13,7 @@ renderContentOn: aCanvas
 	aCanvas text: 'Realizada por: ' .
 	aCanvas anchor
 				callback: [ self callUserDetail: pregunta usuario ];
-				with: pregunta usuario NombreUsuario.
+				with: pregunta usuario nombreUsuario.
 	aCanvas
 		paragraph:
 			pregunta devolverCantidadDeLikes printString , ' Likes' , ' | '
@@ -39,4 +42,3 @@ renderContentOn: aCanvas
 					aCanvas textArea on: #texto of: self;style:  'width:400px;height:100px; font-size:16px;' ].
 			self renderResponderOn: aCanvas].
 		aCanvas paragraph:' '.
-				self renderBackOn: aCanvas.

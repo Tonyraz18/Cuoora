@@ -1,6 +1,9 @@
 rendering
 renderContentOn: aCanvas
 	header renderContentOn: aCanvas.
+	self renderMyProfileOn: aCanvas.
+	self renderLogoutButtonOn: aCanvas .
+	self renderBackOn: aCanvas.
 	aCanvas heading
 		level: 1;
 		with: [ aCanvas emphasis: 'Nueva Pregunta' ].
